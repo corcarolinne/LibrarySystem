@@ -1,0 +1,103 @@
+[
+    {   
+        "first_name": "Liam",
+        "last_name": "Walters",
+        "ID": "0001",
+        "address": {
+            "street": "9156 Dogwood Ave",
+            "city": "devonport",
+            "state": "australian capital territory"
+        }
+    },
+    {
+        "first_name": "Amilcar",
+        "last_name": "Aponte",
+        "ID": "0002",
+        "address": {
+            "street": "87 Florida Street",
+            "city": "Dublin",
+            "state": "Co.Dublin"
+        }
+    },
+    {
+        "first_name": "Carolinne",
+        "last_name": "Cordeiro",
+        "ID": "0003",
+        "address": {
+            "street": "5 The Paddocks",
+            "city": "Dublin",
+            "state": "Co.Dublin"
+        }
+    },
+    {
+        "first_name": "Wagner",
+        "last_name": "Horta",
+        "ID": "0004",
+        "address": {
+            "street": "91 Bellevile",
+            "city": "Dublin",
+            "state": "Co.Dublin"
+        }
+    },
+    {
+        "first_name": "Fernanda",
+        "last_name": "Athayde",
+        "ID": "0005",
+        "address": {
+            "street": "67 Flor de Lis",
+            "city": "Wicklow",
+            "state": "Co. Dublin"
+        }
+    },
+    {
+        "first_name": "Lucas",
+        "last_name": "Correa",
+        "ID": "0006",
+        "address": {
+            "street": "56 North Circular Road",
+            "city": "New Castle",
+            "state": "Co. Leinster"
+
+        }
+    },
+    {
+        "first_name": "Mario",
+        "last_name": "Rosa",
+        "ID": "0007",
+        "address": {
+            "street": "95 Second Ave",
+            "city": "Galway",
+            "state": "Co. Galway"
+        }
+    },
+    {
+        "first_name": "Johnathan",
+        "last_name": "Santos",
+        "ID": "0008",
+        "address": {
+            "street": "98 Justin Connel Ave",
+            "city": "Galway",
+            "state": "Co. Galway"
+        }
+    },
+    {
+        "first_name": "Mars",
+        "last_name": "Planting",
+        "ID": "0009",
+        "address": {
+            "street": "76 Linwood Ave",
+            "city": "Cork",
+            "state": "Co.Cork"
+        }
+    },
+    {
+        "first_name": "Greg",
+        "last_name": "South",
+        "ID": "0010",
+        "address": {
+            "street": "56 Catwood Ave",
+            "city": "Cork",
+            "state": "Co. Cork"
+        }
+    }
+]
