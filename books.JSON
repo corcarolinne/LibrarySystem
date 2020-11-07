@@ -1,82 +1,81 @@
-[
-    {
+{
+  "1933988673": {
       "title": "Unlocking Android",
-      "ID": "1933988673",
       "status": "Available",
-      "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"]
+      "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"],
+      "waitingList": []
     },
-    {
+    "1935182722": {
       "title": "Android in Action, Second Edition",
-      "ID": "1935182722",
       "status":"Available",
-      "authors": ["W. Frank Ableson", "Robi Sen"]
-
+      "authors": ["W. Frank Ableson", "Robi Sen"],
+      "waitingList": []
     },
-    {
+    "1617290084": {
       "title": "Specification by Example",
-      "ID": "1617290084",
       "status":"Available",
-      "authors": ["Gojko Adzic"]
+      "authors": ["Gojko Adzic"],
+      "waitingList": []
     },
-    {
+    "1933988746": {
       "title": "Flex 3 in Action",
-      "ID": "1933988746",
       "status":"Available",
-      "authors": ["Gojko Adzic"]
+      "authors": ["Gojko Adzic"],
+      "waitingList": []
     },
-    {
+    "1935182420": {
       "title": "Flex 4 in Action",
-      "ID": "1935182420",
       "status": "Available",
-      "authors": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"]
+      "authors": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"],
+      "waitingList": []
     },
-    {
+    "1933988312": {
       "title": "Collective Intelligence in Action",
-      "ID": "1933988312",
       "status": "Available",
-      "authors": ["Satnam Alag"]
+      "authors": ["Satnam Alag"],
+      "waitingList": []
     },
-    {
+    "1933988320": {
       "title": "Zend Framework in Action",
-      "ID": "1933988320",
       "pageCount": 432,
       "status": "Available",
-      "authors": ["Rob Allen", "Nick Lo", "Steven Brown"]
+      "authors": ["Rob Allen", "Nick Lo", "Steven Brown"],
+      "waitingList": []
     },
-    {
+    "1933988797": {
       "title": "Flex on Java",
-      "ID": "1933988797",
       "status": "Available",
-      "authors": ["Bernerd Allmon", "Jeremy Anderson"]
+      "authors": ["Bernerd Allmon", "Jeremy Anderson"],
+      "waitingList": []
     },
-    {
+    "1935182234": {
       "title": "Griffon in Action",
-      "ID": "1935182234",
       "status": "Available",
-      "authors": ["Andres Almiray", "Danno Ferrin", "", "James Shingler"]
+      "authors": ["Andres Almiray", "Danno Ferrin", "", "James Shingler"],
+      "waitingList": []
     },
-    {
+    "193518217": {
       "title": "OSGi in Depth",
-      "ID": "193518217X",
       "status": "Available",
-      "authors": ["Alexandre de Castro Alves"]
+      "authors": ["Alexandre de Castro Alves"],
+      "waitingList": []
     },
-    {
+    "1933988509": {
       "title": "Flexible Rails",
-      "ID": "1933988509",
       "status": "Available",
-      "authors": ["Peter Armstrong"]
+      "authors": ["Peter Armstrong"],
+      "waitingList": []
     },
-    {
+    "1933988762": {
       "title": "Hello! Flex 4",
-      "ID": "1933988762",
       "status": "Available",
-      "authors": ["Peter Armstrong"]
+      "authors": ["Peter Armstrong"],
+      "waitingList": []
     },
-    {
+    "1884777384": {
       "title": "Coffeehouse",
-      "ID": "1884777384",
       "status": "Available",
-      "authors": ["Levi Asher", "Christian Crumlish"]
+      "authors": ["Levi Asher", "Christian Crumlish"],
+      "waitingList": []
     }
-  ]
+}
