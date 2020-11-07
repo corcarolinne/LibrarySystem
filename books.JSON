@@ -1,0 +1,82 @@
+[
+    {
+      "title": "Unlocking Android",
+      "ID": "1933988673",
+      "status": "Available",
+      "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"]
+    },
+    {
+      "title": "Android in Action, Second Edition",
+      "ID": "1935182722",
+      "status":"Available",
+      "authors": ["W. Frank Ableson", "Robi Sen"]
+
+    },
+    {
+      "title": "Specification by Example",
+      "ID": "1617290084",
+      "status":"Available",
+      "authors": ["Gojko Adzic"]
+    },
+    {
+      "title": "Flex 3 in Action",
+      "ID": "1933988746",
+      "status":"Available",
+      "authors": ["Gojko Adzic"]
+    },
+    {
+      "title": "Flex 4 in Action",
+      "ID": "1935182420",
+      "status": "Available",
+      "authors": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"]
+    },
+    {
+      "title": "Collective Intelligence in Action",
+      "ID": "1933988312",
+      "status": "Available",
+      "authors": ["Satnam Alag"]
+    },
+    {
+      "title": "Zend Framework in Action",
+      "ID": "1933988320",
+      "pageCount": 432,
+      "status": "Available",
+      "authors": ["Rob Allen", "Nick Lo", "Steven Brown"]
+    },
+    {
+      "title": "Flex on Java",
+      "ID": "1933988797",
+      "status": "Available",
+      "authors": ["Bernerd Allmon", "Jeremy Anderson"]
+    },
+    {
+      "title": "Griffon in Action",
+      "ID": "1935182234",
+      "status": "Available",
+      "authors": ["Andres Almiray", "Danno Ferrin", "", "James Shingler"]
+    },
+    {
+      "title": "OSGi in Depth",
+      "ID": "193518217X",
+      "status": "Available",
+      "authors": ["Alexandre de Castro Alves"]
+    },
+    {
+      "title": "Flexible Rails",
+      "ID": "1933988509",
+      "status": "Available",
+      "authors": ["Peter Armstrong"]
+    },
+    {
+      "title": "Hello! Flex 4",
+      "ID": "1933988762",
+      "status": "Available",
+      "authors": ["Peter Armstrong"]
+    },
+    {
+      "title": "Coffeehouse",
+      "ID": "1884777384",
+      "status": "Available",
+      "authors": ["Levi Asher", "Christian Crumlish"]
+    }
+  ]
