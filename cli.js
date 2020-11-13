@@ -13,7 +13,7 @@ function displayOptionsMenu() {
         "4 - Display readers list" + "\n" +
         "5 - Borrow a book" + "\n" +
         "6 - Return a book" + "\n" +
-        "7 - Display books in transit" + "\n" +
+        "7 - Display books in transit from a specific reader" + "\n" +
         "8 - Exit"
     );
     readSelectedOption();
@@ -36,13 +36,36 @@ function readSelectedOption() {
 }
 
 function displaySecondMenu(optionNumber) {
-    console.log(typeof optionNumber)
     // depending on user's answer
-    if(optionNumber === '3') {
+    if(optionNumber === '1') {
+        console.log("Please choose one of the options to search for a book" + "\n" +
+            "1 - Display books by title" + "\n" +
+            "2 - Display books by author"
+    );
+    } else if(optionNumber === '2') {
+        console.log("Please choose one of the options to search for a reader" + "\n" +
+            "1 - Display readers by name" + "\n" +
+            "2 - Display readers by ID"
+    );
+    } else if(optionNumber === '3') {
         console.log("Please choose one of the options to display the books" + "\n" +
             "1 - Display books by title" + "\n" +
             "2 - Display books by author"
         );
+    } else if(optionNumber === '4') {
+        console.log("Please choose one of the options to display the readers" + "\n" +
+            "1 - Display readers by name" + "\n" +
+            "2 - Display readers by ID"
+    );
+    } else if(optionNumber === '5') {
+        console.log("Second menu for borrow book feature");
+    } else if(optionNumber === '6') {
+        console.log("Second menu for return a book feature");
+    } else if(optionNumber === '7') {
+        console.log("Second menu for display in transit books feature");
+    } else if(optionNumber === '8') {
+        console.log("Bye!");
+        return process.exit();
     }
 }
 
