@@ -1,5 +1,7 @@
 // command line interface
 
+const { read } = require('fs');
+
 
 // variables
 let optionNumber;
@@ -16,23 +18,30 @@ function displayOptionsMenu() {
         "7 - Display books in transit from a specific reader" + "\n" +
         "8 - Exit"
     );
-    readSelectedOption();
+    readSelectedOptionMenu("1");
     return;
 }
 displayOptionsMenu();
 
-function readSelectedOption() {
-    // reading user's answer from menu
-    const readline = require('readline').createInterface({
+function readSelectedOptionMenu(menuNumber) {
+    // reading user's answer for first menu
+    readline = require('readline').createInterface({
         input: process.stdin,
         output: process.stdout
     });
-    
-    readline.question("", optionNumber => {
-        console.log(`Choosen option was ${optionNumber}`);
-        displaySecondMenu(optionNumber);
-        readline.close();
-    })
+    if(menuNumber === "1") {
+        readline.question("", optionNumber => {
+            console.log(`Choosen option was ${optionNumber}`);
+            displaySecondMenu(optionNumber);
+            
+        })   
+    }
+    else if(menuNumber === "2") {
+        readline.question("", optionNumber => {
+            console.log(`Choosen option was ${optionNumber}`);
+            readline.close();
+        })   
+    }
 }
 
 function displaySecondMenu(optionNumber) {
@@ -52,6 +61,9 @@ function displaySecondMenu(optionNumber) {
             "1 - Display books by title" + "\n" +
             "2 - Display books by author"
         );
+        // read user's input
+        readSelectedOptionMenu("2");
+        // if/else depending on answer
     } else if(optionNumber === '4') {
         console.log("Please choose one of the options to display the readers" + "\n" +
             "1 - Display readers by name" + "\n" +
