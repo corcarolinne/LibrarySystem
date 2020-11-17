@@ -1,7 +1,12 @@
 const { title } = require('process');
 const books = require('./books.json')
 
-module.exports = displayBooksByTitle = () => {sortBooksByTitle(Object.values(books))};
+module.exports = displayBooksByTitle = () => {
+    console.table(
+        sortBooksByTitle(Object.values(books)),
+        ['id', 'title', 'status', 'authors']
+    );
+}
 
 function sortBooksByTitle (books) {
     let n = books.length;
@@ -14,5 +19,5 @@ function sortBooksByTitle (books) {
         }
         books[j+1]['title'] = current;
     }
-    return console.log(books);
+    return books;
 }
