@@ -1,10 +1,12 @@
+const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
+const readSearchInput = require('./readSearchInput.js')
 
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
-            // executar funcao que eh pra abrir no option 1
+            // call function to read user's input to know what title to search
+            const titleToSearch = readSearchInput();
             break;
-    
         default:
             break;
     }
@@ -19,12 +21,11 @@ module.exports =  bookSearchMenu = () => {
 
     readline.question(
         "Please choose one of the options to search for a book" + "\n" +
-            "1 - Display books by title" + "\n" +
-            "2 - Display books by author" + "\n",
+            "1 - Search book by title" + "\n" +
+            "2 - Search book by author" + "\n",
         optionNumber => {
             console.log(`Choosen option was ${optionNumber}`);
             executeNextStep(optionNumber);
-            readline.close();
         }
     )   
     return;

@@ -1,5 +1,5 @@
-const booksByTitle = require('../books/displayBooksByTitle.js')
-const booksByAuthor = require('../books/displayBooksByAuthor.js')
+const displayBooksByTitle = require('../books/displayBooksByTitle.js')
+const displaybooksByAuthor = require('../books/displayBooksByAuthor.js')
 
 
 const executeNextStep = (selectedOption) => {
