@@ -1,4 +1,6 @@
-const books = require('../books/displayBooksByTitle.js')
+const booksByTitle = require('../books/displayBooksByTitle.js')
+const booksByAuthor = require('../books/displayBooksByAuthor.js')
+
 
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
@@ -6,12 +8,7 @@ const executeNextStep = (selectedOption) => {
             displayBooksByTitle()
             break;
         case '2':
-            //chamar funcao que display
-            console.log('display  based on author')
-            break
-        case '3':
-            //chamar funcao que display pelos dois casos
-            console.log('display  based on both')
+            displayBooksByAuthor()
             break
         default:
             break;
@@ -28,8 +25,7 @@ module.exports = bookDisplayMenu = () => {
     readline.question(
         "Please choose one of the options to display the books" + "\n" +
             "1 - Display books by title" + "\n" +
-            "2 - Display books by author" + "\n" +
-            "3 - Display books by title AND author" + "+\n",
+            "2 - Display books by author" + "\n",
         optionNumber => {
             console.log(`Choosen option was ${optionNumber}`);
             executeNextStep(optionNumber);

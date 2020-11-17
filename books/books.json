@@ -3,14 +3,14 @@
       "id": "1933988673",
       "title": "Unlocking Android",
       "status": "Available",
-      "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"],
+      "authors": ["Robi Sen"],
       "waitingList": []
     },
     "1935182722": {
       "id": "1935182722",
       "title": "Android in Action, Second Edition",
       "status":"Available",
-      "authors": ["W. Frank Ableson", "Robi Sen"],
+      "authors": ["W. Frank Ableson"],
       "waitingList": []
     },
     "1617290084": {
@@ -31,7 +31,7 @@
       "id": "1935182420",
       "title": "Flex 4 in Action",
       "status": "Available",
-      "authors": ["Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks"],
+      "authors": ["Tariq Ahmed"],
       "waitingList": []
     },
     "1933988312": {
@@ -45,7 +45,7 @@
       "id": "1933988320",
       "title": "Zend Framework in Action",
       "status": "Available",
-      "authors": ["Rob Allen", "Nick Lo", "Steven Brown"],
+      "authors": ["Nick Lo", "Steven Brown"],
       "waitingList": []
     },
     "1933988797": {
@@ -59,7 +59,7 @@
       "id": "1935182234",
       "title": "Griffon in Action",
       "status": "Available",
-      "authors": ["Andres Almiray", "Danno Ferrin", "James Shingler"],
+      "authors": ["Andres Almiray"],
       "waitingList": []
     },
     "1935182174": {
@@ -87,7 +87,7 @@
       "id": "1884777384",
       "title": "Coffeehouse",
       "status": "Available",
-      "authors": ["Levi Asher", "Christian Crumlish"],
+      "authors": ["Levi Asher"],
       "waitingList": []
     }
 }
