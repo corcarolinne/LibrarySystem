@@ -2,101 +2,71 @@
     "0001": {
         "id":"0001",
         "first_name": "Liam",
-        "last_name": "Walters",
-        "address": {
-            "street": "9156 Dogwood Ave",
-            "city": "devonport",
-            "state": "australian capital territory"
-        }
+        "last_name": "Reynolds",
+        "email": "liam@gmail.com",
+        "address": "9156 Dogwood Ave, Dublin"
     },
     "0002": {
         "id":"0002",
         "first_name": "Amilcar",
         "last_name": "Aponte",
-        "address": {
-            "street": "87 Florida Street",
-            "city": "Dublin",
-            "state": "Co.Dublin"
-        }
+        "email": "amilcar@gmail.com",
+        "address": "87 Florida Street, Dublin"
     },
     "0003":{
         "id":"0003",
         "first_name": "Carolinne",
         "last_name": "Cordeiro",
-        "address": {
-            "street": "5 The Paddocks",
-            "city": "Dublin",
-            "state": "Co.Dublin"
-        }
+        "email": "carolinne@gmail.com",
+        "address": "5 The Paddocks, Dublin"
     },
     "0004":{
         "id":"0004",
         "first_name": "Wagner",
         "last_name": "Horta",
-        "address": {
-            "street": "91 Bellevile",
-            "city": "Dublin",
-            "state": "Co.Dublin"
-        }
+        "email": "wagner@gmail.com",
+        "address": "91 Bellevile, Dublin"
     },
     "0005":{
         "id":"0005",
         "first_name": "Fernanda",
         "last_name": "Athayde",
-        "address": {
-            "street": "67 Flor de Lis",
-            "city": "Wicklow",
-            "state": "Co. Dublin"
-        }
+        "email": "fernanda@gmail.com",
+        "address": "67 Flor de Lis, Wicklow"
     },
     "0006":{
         "id":"0006",
         "first_name": "Lucas",
         "last_name": "Correa",
-        "address": {
-            "street": "56 North Circular Road",
-            "city": "New Castle",
-            "state": "Co. Leinster"
-        }
+        "email": "lucas@gmail.com",
+        "address": "56 North Circular Road, New Castle"
     },
     "0007":{
         "id":"0007",
         "first_name": "Mario",
         "last_name": "Rosa",
-        "address": {
-            "street": "95 Second Ave",
-            "city": "Galway",
-            "state": "Co. Galway"
-        }
+        "email": "mario@gmail.com",
+        "address": "95 Second Ave, Galway"
     },
     "0008":{
         "id":"0008",
         "first_name": "Johnathan",
         "last_name": "Santos",
-        "address": {
-            "street": "98 Justin Connel Ave",
-            "city": "Galway",
-            "state": "Co. Galway"
-        }
+        "email": "johnny@gmail.com",
+        "address": "98 Justin Connel Ave, Galway"
     },
     "0009":{
         "id":"0009",
         "first_name": "Mars",
         "last_name": "Planting",
-        "address": {
-            "street": "76 Linwood Ave",
-            "city": "Cork",
-            "state": "Co.Cork"
-        }
+        "email": "mars@gmail.com",
+        "address": "76 Linwood Ave, Cork"
     },
     "0010":{
         "id":"0010",
         "first_name": "Greg",
         "last_name": "South",
-        "address": {
-            "street": "56 Catwood Ave",
-            "city": "Cork",
-            "state": "Co. Cork"
-        }
+        "email": "greg@gmail.com",
+        "address": "56 Catwood Ave, Cork"
     }
 }
