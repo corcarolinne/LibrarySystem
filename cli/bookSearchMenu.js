@@ -20,7 +20,7 @@ module.exports =  bookSearchMenu = () => {
     readline.question(
         "Please choose one of the options to search for a book" + "\n" +
             "1 - Display books by title" + "\n" +
-            "2 - Display books by author",
+            "2 - Display books by author" + "\n",
         optionNumber => {
             console.log(`Choosen option was ${optionNumber}`);
             executeNextStep(optionNumber);
