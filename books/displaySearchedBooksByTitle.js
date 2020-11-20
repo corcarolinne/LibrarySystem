@@ -1,14 +1,12 @@
 const { title } = require('process');
 const books = require('./books.json');
 const sortBooksByTitle = require('./sortBooksByTitle.js');
-const readSearchInput = require('../cli/readSearchInput.js');
-
-
 
 module.exports = displaySearchedBooksByTitle = (titleToSearch) => {
-    console.log(
-        searchBooksByTitle(Object.values(books), titleToSearch),
-        //['id', 'title', 'status', 'authors']
+    const bookResult = [searchBooksByTitle(Object.values(books), titleToSearch)]
+    console.table(
+        bookResult,
+        ['id', 'title', 'status', 'authors']
     );
 }
 
