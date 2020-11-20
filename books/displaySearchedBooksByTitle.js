@@ -19,7 +19,7 @@ function searchBooksByTitle (books, input) {
     let endIndex = sortedBooks.length - 1;
     while(startIndex <= endIndex) {
         let middleIndex = Math.floor((startIndex + endIndex) / 2);
-        if(input === sortedBooks[middleIndex]['title']) {
+        if((sortedBooks[middleIndex]['title']).includes(input)) {
             console.log("Target was found at index " + middleIndex);
             return sortedBooks[middleIndex];
         }
