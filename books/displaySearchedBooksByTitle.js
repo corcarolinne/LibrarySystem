@@ -3,34 +3,23 @@ const books = require('./books.json');
 const sortBooksByTitle = require('./sortBooksByTitle.js');
 
 module.exports = displaySearchedBooksByTitle = (titleToSearch) => {
-    const bookResult = [searchBooksByTitle(Object.values(books), titleToSearch)]
     console.table(
-        bookResult,
+        searchBooksByTitle(Object.values(books), titleToSearch),
         ['id', 'title', 'status', 'authors']
     );
 }
 
 function searchBooksByTitle (books, input) {
-    // sort books alphabetically by title
-    const sortedBooks = sortBooksByTitle(books);
+    const result = []
 
-    // performing binary search
-    let startIndex = 0;
-    let endIndex = sortedBooks.length - 1;
-    while(startIndex <= endIndex) {
-        let middleIndex = Math.floor((startIndex + endIndex) / 2);
-        if((sortedBooks[middleIndex]['title']).includes(input)) {
-            console.log("Target was found at index " + middleIndex);
-            return sortedBooks[middleIndex];
-        }
-        if(input > sortedBooks[middleIndex]['title']) {
-            startIndex = middleIndex + 1;
-        }
-        if(input < sortedBooks[middleIndex]['title']) {
-            endIndex = middleIndex - 1;
+    for(let i = 0; i < books.length; i++) {
+        if((books[i].title).toUpperCase().includes(input.toUpperCase())) {
+            result.push(books[i]);
         }
     }
-    console.log("Target value not found in array");
 
-    
+    if (result.length === 0)
+        console.log("Target value not found in array");
+
+    return result
 }
