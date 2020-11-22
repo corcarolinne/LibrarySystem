@@ -12,5 +12,13 @@ module.exports = displaySearchedBooksByAuthor = (authorToSearch) => {
 function searchBooksByAuthor (books, input) {
     const result = []
 
-    return console.log('test');
+    for(let i = 0; i < books.length; i++) {
+        if((books[i].authors).toUpperCase().includes(input.toUpperCase())) {
+            result.push(books[i]);
+        }
+    }
+    if (result.length === 0)
+        console.log("Target value not found in array");
+
+    return result
 }

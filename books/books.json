@@ -3,91 +3,91 @@
       "id": "1933988673",
       "title": "Unlocking Android",
       "status": "Available",
-      "authors": ["Robi Sen"],
+      "authors": "Robi Sen",
       "waitingList": []
     },
     "1935182722": {
       "id": "1935182722",
-      "title": "Unlocking Android",
+      "title": "Unlocking Android 2",
       "status":"Available",
-      "authors": ["W. Frank Ableson"],
+      "authors": "W. Frank Ableson",
       "waitingList": []
     },
     "1617290084": {
       "id": "1617290084",
       "title": "Specification by Example",
       "status":"Available",
-      "authors": ["Gojko Adzic"],
+      "authors": "Gojko Adzic",
       "waitingList": []
     },
     "1933988746": {
       "id": "1933988746",
       "title": "Flex 3 in Action",
       "status":"Available",
-      "authors": ["Gojko Adzic"],
+      "authors": "Gojko Adzic",
       "waitingList": []
     },
     "1935182420": {
       "id": "1935182420",
       "title": "Flex 4 in Action",
       "status": "Available",
-      "authors": ["Tariq Ahmed"],
+      "authors": "Tariq Ahmed",
       "waitingList": []
     },
     "1933988312": {
       "id": "1933988312",
       "title": "Collective Intelligence in Action",
       "status": "Available",
-      "authors": ["Satnam Alag"],
+      "authors": "Satnam Alag",
       "waitingList": []
     },
     "1933988320": {
       "id": "1933988320",
       "title": "Zend Framework in Action",
       "status": "Available",
-      "authors": ["Nick Lo", "Steven Brown"],
+      "authors": "Nick Lo",
       "waitingList": []
     },
     "1933988797": {
       "id": "1933988797",
       "title": "Flex on Java",
       "status": "Available",
-      "authors": ["Bernerd Allmon", "Jeremy Anderson"],
+      "authors": "Bernerd Allmon",
       "waitingList": []
     },
     "1935182234": {
       "id": "1935182234",
       "title": "Griffon in Action",
       "status": "Available",
-      "authors": ["Andres Almiray"],
+      "authors": "Andres Almiray",
       "waitingList": []
     },
     "1935182174": {
       "id": "1935182174",
       "title": "OSGi in Depth",
       "status": "Available",
-      "authors": ["Alexandre de Castro Alves"],
+      "authors": "Alexandre de Castro Alves",
       "waitingList": []
     },
     "1933988509": {
       "id": "1933988509",
       "title": "Flexible Rails",
       "status": "Available",
-      "authors": ["Peter Armstrong"],
+      "authors": "Peter Armstrong",
       "waitingList": []
     },
     "1933988762": {
       "id": "1933988762",
       "title": "Hello! Flex 4",
       "status": "Available",
-      "authors": ["Peter Armstrong"],
+      "authors": "Peter Armstrong",
       "waitingList": []
     },
     "1884777384": {
       "id": "1884777384",
       "title": "Coffeehouse",
       "status": "Available",
-      "authors": ["Levi Asher"],
+      "authors": "Levi Asher",
       "waitingList": []
     }
 }
