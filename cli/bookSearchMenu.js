@@ -1,11 +1,17 @@
 const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
-const readSearchInput = require('./readSearchInput.js')
+const displaySearchedBooksByAuthor = require('../books/displaySearchedBooksByAuthor.js');
+const readTitleToSearch = require('./readTitleToSearch.js');
+const readAuthorToSearch = require('./readAuthorToSearch.js')
 
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
             // call function to read user's input to know what title to search
-            const titleToSearch = readSearchInput();
+            const titleToSearch = readTitleToSearch();
+            break;
+        case '2':
+            // call function to read user's input to know what title to search
+            const authorToSearch = readAuthorToSearch();
             break;
         default:
             break;
