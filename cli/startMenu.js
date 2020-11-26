@@ -30,7 +30,7 @@ Select an option from the following menu and press enter:
 4 - Display readers list
 5 - Borrow a book
 6 - Return a book
-7 - Display books in transit from a  specific reader
+7 - Display books in transit for a specific reader
 8 - Exit
 `
 
