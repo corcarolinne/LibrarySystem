@@ -1,5 +1,5 @@
 const displaySearchedReadersByName = require('../readers/displaySearchedReadersByName.js');
-//const displaySearchedReadersById = require('../readers/displaySearchedReadersById.js');
+const displaySearchedReadersById = require('../readers/displaySearchedReadersById.js');
 const readNameToSearch = require('./readNameToSearch.js');
 const readIdToSearch = require('./readIdToSearch.js')
 
@@ -11,7 +11,7 @@ const executeNextStep = (selectedOption) => {
             break;
         case '2':
             // call function to read user's input to know what reader to search
-            //const idToSearch = readIdToSearch();
+            const idToSearch = readIdToSearch();
             break;
         default:
             break;

@@ -1,18 +1,18 @@
-const { first_name } = require('process');
+const { id } = require('process');
 const readers = require('./readers.json');
 
-module.exports = displaySearchedReadersByName = (nameToSearch) => {
+module.exports = displaySearchedReadersById = (idToSearch) => {
     console.table(
-        searchReadersByName(Object.values(readers), nameToSearch),
+        searchReadersById(Object.values(readers), idToSearch),
         ['id', 'first_name', 'last_name', 'email', 'address']
     );
 }
 
-function searchReadersByName (readers, input) {
+function searchReadersById (readers, input) {
     const result = []
   
     for(let i = 0; i < readers.length; i++) {
-        if((readers[i].first_name).toUpperCase().includes(input.toUpperCase())) {
+        if((readers[i].id).includes(input)) {
             result.push(readers[i]);
         }
     }
