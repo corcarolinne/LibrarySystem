@@ -1,3 +1,4 @@
+const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
 const registerBookBorrowed = require('../books/registerBookBorrowed.js')
 
 const executeNextStep = (bookToBorrow) => {
@@ -22,12 +23,18 @@ module.exports =  borrowBookMenu = () => {
         output: process.stdout,
         terminal: false
     });
-
+    
     readline.question(
-        "Please enter the title of the book" + "\n",
+        "Please enter the title of the book to borrow" + "\n",
         bookToBorrow => {
             console.log(`Choosen book was ${bookToBorrow}`);
-            executeNextStep(bookToBorrow);
+
+            if(displaySearchedBooksByTitle(bookToBorrow).length > 1) {
+                console.log('More than one result with this title')
+                readline.close();
+            } else {
+                executeNextStep(bookToBorrow);
+            }  
         }
     )
 }
