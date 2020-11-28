@@ -2,10 +2,8 @@ const { first_name } = require('process');
 const readers = require('./readers.json');
 
 module.exports = displaySearchedReadersByName = (nameToSearch) => {
-    console.table(
-        searchReadersByName(Object.values(readers), nameToSearch),
-        ['id', 'first_name', 'last_name', 'email', 'address']
-    );
+    return searchReadersByName(Object.values(readers), nameToSearch)
+        //['id', 'first_name', 'last_name', 'email', 'address']
 }
 
 function searchReadersByName (readers, input) {
