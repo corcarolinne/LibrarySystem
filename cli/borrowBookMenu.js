@@ -1,6 +1,6 @@
 const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
 const registerBookBorrowed = require('../books/registerBookBorrowed.js')
-const displaySearchedReadersByName = require('../readers/displaySearchedReadersByName.js')
+const searchReadersByName = require('../readers/searchReadersByName.js')
 
 const executeNextStep = (bookToBorrow) => {
     const readline = require('readline').createInterface({
@@ -14,12 +14,12 @@ const executeNextStep = (bookToBorrow) => {
         readerName => {
             console.log(`Reader name was ${readerName}`);
 
-            if(displaySearchedReadersByName(readerName).length === 0) {
+            if(searchReadersByName(readerName).length === 0) {
                 console.log('No results.');
                 executeNextStep(bookToBorrow);
             }
-            else if(displaySearchedReadersByName(readerName).length >= 1) {
-                console.log(displaySearchedReadersByName(readerName));
+            else if(searchReadersByName(readerName).length >= 1) {
+                console.log(searchReadersByName(readerName));
                 readline.question(
                     "Please enter the id of the reader" + "\n",
                     readerId => {
