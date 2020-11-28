@@ -1,7 +1,7 @@
 const { authors } = require('process');
 const books = require('./books.json')
 
-function sortBooksByAuthor (books) {
+module.exports = sortBooksByAuthor = (books) => {
     let n = books.length;
     for (let i = 1; i < n; i++) {
         let current = books[i];
