@@ -25,6 +25,7 @@ const executeNextStep = (bookId) => {
                     readerId => {
                         console.log(`Reader Id selected was ${readerId}`);
                         registerBookBorrowed(bookId, readerId);
+                        readline.close();
                     })      
             }
         }
