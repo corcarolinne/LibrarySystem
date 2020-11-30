@@ -1,8 +1,9 @@
 const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
 const registerBookBorrowed = require('../books/registerBookBorrowed.js')
 const searchReadersByName = require('../readers/searchReadersByName.js')
+const searchBooksByTitle = require('../books/searchBooksByTitle.js')
 
-const executeNextStep = (bookToBorrow) => {
+const executeNextStep = (bookId) => {
     const readline = require('readline').createInterface({
         input: process.stdin,
         output: process.stdout,
@@ -16,7 +17,7 @@ const executeNextStep = (bookToBorrow) => {
 
             if(searchReadersByName(readerName).length === 0) {
                 console.log('No results.');
-                executeNextStep(bookToBorrow);
+                executeNextStep(bookId);
             }
             else if(searchReadersByName(readerName).length >= 1) {
                 console.log(searchReadersByName(readerName));
@@ -24,7 +25,7 @@ const executeNextStep = (bookToBorrow) => {
                     "Please enter the id of the reader" + "\n",
                     readerId => {
                         console.log(`Reader Id selected was ${readerId}`);
-                        registerBookBorrowed(bookToBorrow, readerId);
+                        registerBookBorrowed(bookId, readerId);
                     })      
             }
         }
@@ -44,19 +45,18 @@ module.exports =  borrowBookMenu = () => {
             console.log(`Choosen book was ${bookToBorrow}`);
 
             // in case there's no result
-            if(displaySearchedBooksByTitle(bookToBorrow).length === 0) {
+            if(searchBooksByTitle(bookToBorrow).length === 0) {
                 console.log('No results.');
                 borrowBookMenu();
             }
-            // in case there's more than one result
-            else if(displaySearchedBooksByTitle(bookToBorrow).length > 1) {
-                console.log('More than one book with this title! Please type the title again.')
-                borrowBookMenu();
-                //readline.close();
-            }
-            // in case there's one result
-            else {
-                executeNextStep(bookToBorrow);
+            else if(searchBooksByTitle(bookToBorrow).length >= 1) {
+                console.log(searchBooksByTitle(bookToBorrow));
+                readline.question(
+                    "Please enter the id of the book" + "\n",
+                    bookId => {
+                        console.log(`Book Id selected was ${bookId}`);
+                        executeNextStep(bookId);
+                    })      
             }
         }
     )
