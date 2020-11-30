@@ -1,5 +1,4 @@
-const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
-const registerBookBorrowed = require('../books/registerBookBorrowed.js')
+const registerBookBorrowed = require('../operations/registerBookBorrowed.js')
 const searchReadersByName = require('../readers/searchReadersByName.js')
 const searchBooksByTitle = require('../books/searchBooksByTitle.js')
 
