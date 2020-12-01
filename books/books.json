@@ -44,7 +44,7 @@
   "00007": {
     "id": "00007",
     "title": "Zend Framework in Action",
-    "status": "Available",
+    "status": "In_TRANSIT",
     "authors": "Nick Lo",
     "waitingList": []
   },
@@ -65,14 +65,14 @@
   "00010": {
     "id": "00010",
     "title": "OSGi in Depth",
-    "status": "Available",
+    "status": "In_TRANSIT",
     "authors": "Alexandre de Castro Alves",
     "waitingList": []
   },
   "00011": {
     "id": "00011",
     "title": "Flexible Rails",
-    "status": "IN_TRANSIT",
+    "status": "Available",
     "authors": "Peter Armstrong",
     "waitingList": []
   },
@@ -86,7 +86,7 @@
   "00013": {
     "id": "00013",
     "title": "Coffeehouse",
-    "status": "IN_TRANSIT",
+    "status": "Available",
     "authors": "Levi Asher",
     "waitingList": []
   }

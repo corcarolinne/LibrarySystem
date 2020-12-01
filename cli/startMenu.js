@@ -3,6 +3,7 @@ const readerSearchMenu = require('./readerSearchMenu')
 const bookDisplayMenu = require('./bookDisplayMenu')
 const readersDisplayMenu = require('./readersDisplayMenu')
 const borrowBookMenu = require('./borrowBookMenu')
+const returnBookMenu = require('./returnBookMenu')
 
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
@@ -20,6 +21,9 @@ const executeNextStep = (selectedOption) => {
             break
         case '5':
             borrowBookMenu();
+            break
+        case '6':
+            returnBookMenu();
             break
         default:
             break;
