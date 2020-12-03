@@ -1,9 +1,5 @@
 [
   {
-    "bookId": "00007",
-    "readerId": "0008"
-  },
-  {
     "bookId": "00010",
     "readerId": "0007"
   }

@@ -25,6 +25,7 @@ module.exports =  returnBookMenu = () => {
                     bookId => {
                         console.log(`Book Id selected was ${bookId}`);
                         returnBookBorrowed(bookId);
+                        readline.close();
                     })      
             }
         }
