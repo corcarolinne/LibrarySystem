@@ -11,7 +11,10 @@
     "title": "Unlocking Android 2",
     "status": "IN_TRANSIT",
     "authors": "W. Frank Ableson",
-    "waitingList": []
+    "waitingList": [
+      "0006",
+      "0003"
+    ]
   },
   "00003": {
     "id": "00003",
