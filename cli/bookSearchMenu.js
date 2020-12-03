@@ -1,5 +1,3 @@
-const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
-const displaySearchedBooksByAuthor = require('../books/displaySearchedBooksByAuthor.js');
 const readTitleToSearch = require('./readTitleToSearch.js');
 const readAuthorToSearch = require('./readAuthorToSearch.js')
 

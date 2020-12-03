@@ -11,7 +11,6 @@ function returnBook(bookId) {
     let borrowingsInFile = [];
     // declarating obj to hold books data
     let booksInFile = {};
-    let borrowing = {};
 
     // read books file to change status
     // Read books.json file 
