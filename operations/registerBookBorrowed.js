@@ -1,5 +1,6 @@
 const books = require('../books/books.json');
 const borrowings = require('../borrowings.json');
+const addReaderToWaitingList = require ('./addReaderToWaitingList.js')
 const fs = require("fs"); 
 
 module.exports = registerBookBorrowed = (bookId, readerId) => {
@@ -32,9 +33,9 @@ function borrowBook(bookId, readerId) {
             console.log('Book is already in transit. Reader will be added to the waiting list.')
             
             // adding reader to the waiting list
-            booksInFile[bookId].waitingList.push(readerId);
+            addReaderToWaitingList(booksInFile[bookId].waitingList, readerId);
             fs.writeFile("./books/books.json", JSON.stringify(booksInFile, null, "  "), () => {});
-            console.log('reader ' + readerId + ' was sucessfully added on the waiting list reader');
+            console.log('reader ' + readerId + ' was sucessfully added on the waiting list of book ' + bookId);
 
 
         } else {
