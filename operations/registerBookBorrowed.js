@@ -1,6 +1,8 @@
 const books = require('../books/books.json');
 const borrowings = require('../borrowings.json');
 const addReaderToWaitingList = require ('./addReaderToWaitingList.js')
+const removeReaderOfWaitingList = require ('./removeReaderOfWaitingList.js')
+
 const fs = require("fs"); 
 
 module.exports = registerBookBorrowed = (bookId, readerId) => {
@@ -39,7 +41,16 @@ function borrowBook(bookId, readerId) {
 
 
         } else {
+            // change status
             booksInFile[bookId].status = 'IN_TRANSIT'
+
+            // check if reader is on waiting list
+            for(let i= 0; i < (booksInFile[bookId].waitingList).length; i++) {
+                if(booksInFile[bookId].waitingList[i] === readerId) {
+                    removeReaderOfWaitingList(booksInFile[bookId].waitingList, readerId);
+                }
+            }
+
             // write on books.json the books
             fs.writeFile("./books/books.json", JSON.stringify(booksInFile, null, "  "), () => {});
 

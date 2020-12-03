@@ -12,10 +12,10 @@
     "status": "IN_TRANSIT",
     "authors": "W. Frank Ableson",
     "waitingList": [
-      "0006",
       "0003",
       "0001",
-      "0007"
+      "0007",
+      "0002"
     ]
   },
   "00003": {
