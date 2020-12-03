@@ -28,7 +28,8 @@ function returnBook(bookId) {
         } 
         // if book is in transit, change its status
         else {
-            booksInFile[bookId].status = 'Available'
+            booksInFile[bookId].status = 'Available';
+
             // write on books.json the books
             fs.writeFile("./books/books.json", JSON.stringify(booksInFile, null, "  "), () => {});
 
@@ -51,6 +52,10 @@ function returnBook(bookId) {
                     if (err) throw err;  
                     
                     console.log('book ' + bookId + ' returned sucessfully')
+                    if(booksInFile[bookId].waitingList.length > 0) {
+                        console.log('The first readerID on the waiting list for this book is ' + booksInFile[bookId].waitingList[0]);
+                        
+                    }
                 });
             })
         }
