@@ -11,6 +11,8 @@ const executeNextStep = (selectedOption) => {
             displayReadersById()
             break
         default:
+            console.log("Please type '1' or '2' to choose how to search for readers!");
+            readersDisplayMenu();
             break;
     }
 }
@@ -23,13 +25,12 @@ module.exports = readersDisplayMenu = () => {
     });
 
     readline.question(
-        "Please choose one of the options to display the readers" + "\n" +
+        "Please choose one of the options to display the readers:" + "\n" +
             "1 - Display readers by name" + "\n" +
             "2 - Display readers by ID" + "\n",
         optionNumber => {
-            console.log(`Choosen option was ${optionNumber}`);
+            console.log(`Choosen option was: ${optionNumber}`);
             executeNextStep(optionNumber);
-            readline.close();
         }
     )   
     return;

@@ -5,13 +5,17 @@ const displaybooksByAuthor = require('../books/displayBooksByAuthor.js')
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
+            console.log(`Choosen option was: ${selectedOption}`);
             displayBooksByTitle()
             break;
         case '2':
+            console.log(`Choosen option was: ${selectedOption}`);
             displayBooksByAuthor()
             break
         default:
-            break;
+            console.log("Please type '1' or '2' to choose how to search books!");
+            bookDisplayMenu();
+            break
     }
 }
 
@@ -23,13 +27,12 @@ module.exports = bookDisplayMenu = () => {
     });
 
     readline.question(
-        "Please choose one of the options to display the books" + "\n" +
+        "Please choose one of the options to display the books:" + "\n" +
             "1 - Display books by title" + "\n" +
             "2 - Display books by author" + "\n",
         optionNumber => {
-            console.log(`Choosen option was ${optionNumber}`);
             executeNextStep(optionNumber);
-            readline.close();
+            //readline.close();
         }
     )   
     return;
