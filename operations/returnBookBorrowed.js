@@ -22,12 +22,15 @@ function returnBook(bookId) {
         // Converting to JSON books file
         booksInFile = JSON.parse(data);
 
+        if(booksInFile[bookId] === undefined) {
+            console.log('This book id do not belong to any of the books in transit. Please try to return again or search for books for more information.')
+        }
         // if book is available
-        if (booksInFile[bookId].status === 'Available') {
-            console.log('This book was not borrowed and is available to borrow')
+        else if (booksInFile[bookId].status === 'Available') {
+            console.log('This book was not borrowed and is currently available. Please try to return again or search for books for more information.')
         } 
         // if book is in transit, change its status
-        else {
+        else if(booksInFile[bookId].status === 'IN_TRANSIT') {
             booksInFile[bookId].status = 'Available';
 
             // write on books.json the books
@@ -51,13 +54,16 @@ function returnBook(bookId) {
                     // checking for errors 
                     if (err) throw err;  
                     
-                    console.log('book ' + bookId + ' returned sucessfully')
+                    console.log('Book: ' + bookId + ' was returned sucessfully.')
                     if(booksInFile[bookId].waitingList.length > 0) {
-                        console.log('The first readerID on the waiting list for this book is ' + booksInFile[bookId].waitingList[0]);
+                        console.log('The first reader Id on the waiting list for this book is: ' + booksInFile[bookId].waitingList[0]);
                         
                     }
                 });
             })
+        }
+        else {
+            console.log('Book id not found. Please check the number you typed and try again.');
         }
     });
 }

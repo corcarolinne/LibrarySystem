@@ -50,10 +50,11 @@
   "00007": {
     "id": "00007",
     "title": "Zend Framework in Action",
-    "status": "IN_TRANSIT",
+    "status": "Available",
     "authors": "Nick Lo",
     "waitingList": [
-      "0001"
+      "0001",
+      "0008"
     ]
   },
   "00008": {

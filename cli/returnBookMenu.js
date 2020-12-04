@@ -9,13 +9,13 @@ module.exports =  returnBookMenu = () => {
     });
     
     readline.question(
-        "Please enter the title of the book to return" + "\n",
+        "Please enter the title of the book to return." + "\n",
         bookToReturn => {
-            console.log(`Chosen book was ${bookToReturn}`);
+            console.log(`Chosen book was: ${bookToReturn}`);
 
             // in case there's no result
             if(searchBooksByTitle(bookToReturn).length === 0) {
-                console.log('No results.');
+                console.log('No results. Please type again the title or use search to look for books.');
                 returnBookMenu();
             }
             else if(searchBooksByTitle(bookToReturn).length >= 1) {
@@ -23,9 +23,15 @@ module.exports =  returnBookMenu = () => {
                 readline.question(
                     "Please enter the id of the book" + "\n",
                     bookId => {
-                        console.log(`Book Id selected was ${bookId}`);
-                        returnBookBorrowed(bookId);
+                        if(isNaN(bookId) === false){
+                            // loop thru borrowings
+                            console.log(`Book Id selected was: ${bookId}`);
+                            returnBookBorrowed(bookId);
                         readline.close();
+                        } else {
+                            console.log('Please type only numbers for book id.')
+                            returnBookMenu();
+                        } 
                     })      
             }
         }
