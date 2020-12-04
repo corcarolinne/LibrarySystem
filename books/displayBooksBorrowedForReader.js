@@ -15,7 +15,7 @@ function searchReaders(borrowings, input) {
     }
     searchBooks(Object.values(books), bookIdsFound);
     if (bookIdsFound.length === 0)
-        console.log("Target value not found in array");
+        console.log("This reader didn't borrow books yet.");
 
 }
 

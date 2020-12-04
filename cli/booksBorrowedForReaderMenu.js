@@ -1,4 +1,5 @@
 const displayBooksBorrowedForReader = require('../books/displayBooksBorrowedForReader.js')
+
 module.exports = readIdToSearch = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,
@@ -9,10 +10,16 @@ module.exports = readIdToSearch = () => {
     readline.question(
         "Please type the id of the reader you wanna search for" + "\n",
         idToSearch => {
-            console.log(`Chosen option was ${idToSearch}`);
-            // call function to search for reader
-            displayBooksBorrowedForReader(idToSearch);
-            readline.close();
+            if(isNaN(idToSearch) === false){
+                // loop thru borrowings
+                console.log(`Chosen id was: ${idToSearch}`);
+                // call function to search for reader
+                displayBooksBorrowedForReader(idToSearch);
+                readline.close();
+            } else {
+                console.log('Please try again and type only numbers for reader id.')
+                process.exit();
+            }   
         }
     )   
     return;
