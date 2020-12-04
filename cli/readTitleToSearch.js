@@ -1,3 +1,5 @@
+const displaySearchedBooksByTitle = require('../books/displaySearchedBooksByTitle.js');
+
 module.exports = readTitleToSearch = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,
@@ -6,9 +8,9 @@ module.exports = readTitleToSearch = () => {
     });
 
     readline.question(
-        "Please type the title you wanna search for" + "\n",
+        "Please type the title you wanna search for." + "\n",
         titleToSearch => {
-            console.log(`Choosen option was ${titleToSearch}`);
+            console.log(`Choosen title was: ${titleToSearch}`);
             // call function to search for book
             displaySearchedBooksByTitle(titleToSearch);
             readline.close();

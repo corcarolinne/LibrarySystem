@@ -1,9 +1,12 @@
 const { title } = require('process');
+const readTitleToSearch = require('../cli/readTitleToSearch');
 const books = require('./books.json');
 
 module.exports = displaySearchedBooksByTitle = (titleToSearch) => {
-    return searchBooksByTitle(Object.values(books), titleToSearch)
-    //['id', 'title', 'status', 'authors']
+    return console.table(
+        searchBooksByTitle(Object.values(books), titleToSearch),
+        ['id', 'title', 'status', 'authors', 'waitingList']
+    )
 }
 
 function searchBooksByTitle (books, input) {
@@ -16,7 +19,7 @@ function searchBooksByTitle (books, input) {
     }
 
     if (result.length === 0)
-        console.log("Target value not found in array");
+        console.log("No results. Please type title again or search for author.");
 
     return result
 }

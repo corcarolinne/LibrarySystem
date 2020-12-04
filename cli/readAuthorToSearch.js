@@ -1,3 +1,5 @@
+const displaySearchedBooksByAuthor = require('../books/displaySearchedBooksByAuthor.js')
+
 module.exports = readAuthorToSearch = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,
@@ -6,9 +8,9 @@ module.exports = readAuthorToSearch = () => {
     });
 
     readline.question(
-        "Please type the author you wanna search for" + "\n",
+        "Please type the author you wanna search for." + "\n",
         authorToSearch => {
-            console.log(`Choosen option was ${authorToSearch}`);
+            console.log(`Choosen author was: ${authorToSearch}`);
             // call function to search for book
             displaySearchedBooksByAuthor(authorToSearch);
             readline.close();

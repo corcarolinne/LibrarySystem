@@ -29,7 +29,13 @@ const executeNextStep = (selectedOption) => {
         case '7':
             booksBorrowedForReaderMenu();
             break
+        case '8':
+            // exit program
+            process.exit();
+            break
         default:
+            console.log('Please type a number from 1 to 8 to choose an option!');
+            startMenu();
             break;
     }
 }
@@ -55,7 +61,7 @@ module.exports = startMenu = () => {
 
     readline.question(message,
         optionNumber => {
-            console.log(`Choosen option was ${optionNumber}`);
+            console.log(`Choosen option was: ${optionNumber}`);
             executeNextStep(optionNumber);
         }
     )   
