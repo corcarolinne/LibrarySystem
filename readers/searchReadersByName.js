@@ -12,7 +12,7 @@ function searchReaders(readers, input) {
         }
     }
     if (result.length === 0)
-        console.log("No results. Please type name again or search for id.");
+        console.log("No results. Please type name again or use search for id.");
 
     return result
 }

@@ -5,12 +5,12 @@ const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
             // call function to read user's input to know what title to search
-            console.log(`Choosen option was: ${selectedOption}`);
+            console.log(`Chosen option was: ${selectedOption}`);
             const titleToSearch = readTitleToSearch();
             break;
         case '2':
             // call function to read user's input to know what title to search
-            console.log(`Choosen option was: ${selectedOption}`);
+            console.log(`Chosen option was: ${selectedOption}`);
             const authorToSearch = readAuthorToSearch();
             break;
         default:

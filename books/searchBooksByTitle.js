@@ -11,8 +11,6 @@ function searchBooks(books, input) {
             result.push(books[i]);
         }
     }
-    if (result.length === 0)
-        console.log("Target value not found in array");
 
     return result
 }

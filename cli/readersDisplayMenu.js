@@ -29,7 +29,7 @@ module.exports = readersDisplayMenu = () => {
             "1 - Display readers by name" + "\n" +
             "2 - Display readers by ID" + "\n",
         optionNumber => {
-            console.log(`Choosen option was: ${optionNumber}`);
+            console.log(`Chosen option was: ${optionNumber}`);
             executeNextStep(optionNumber);
         }
     )   

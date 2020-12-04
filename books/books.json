@@ -2,17 +2,18 @@
   "00001": {
     "id": "00001",
     "title": "Unlocking Android",
-    "status": "Available",
+    "status": "IN_TRANSIT",
     "authors": "Robi Sen",
-    "waitingList": []
+    "waitingList": [
+      "0002"
+    ]
   },
   "00002": {
     "id": "00002",
     "title": "Unlocking Android 2",
-    "status": "Available",
+    "status": "IN_TRANSIT",
     "authors": "W. Frank Ableson",
     "waitingList": [
-      "0003",
       "0001",
       "0007",
       "0002"
@@ -49,9 +50,11 @@
   "00007": {
     "id": "00007",
     "title": "Zend Framework in Action",
-    "status": "Available",
+    "status": "IN_TRANSIT",
     "authors": "Nick Lo",
-    "waitingList": []
+    "waitingList": [
+      "0001"
+    ]
   },
   "00008": {
     "id": "00008",
@@ -70,7 +73,7 @@
   "00010": {
     "id": "00010",
     "title": "OSGi in Depth",
-    "status": "In_TRANSIT",
+    "status": "IN_TRANSIT",
     "authors": "Alexandre de Castro Alves",
     "waitingList": []
   },
@@ -91,7 +94,7 @@
   "00013": {
     "id": "00013",
     "title": "Coffeehouse",
-    "status": "Available",
+    "status": "IN_TRANSIT",
     "authors": "Levi Asher",
     "waitingList": []
   }

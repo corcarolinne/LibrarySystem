@@ -2,5 +2,17 @@
   {
     "bookId": "00010",
     "readerId": "0007"
+  },
+  {
+    "bookId": "00013",
+    "readerId": "0006"
+  },
+  {
+    "bookId": "00001",
+    "readerId": "0003"
+  },
+  {
+    "bookId": "00007",
+    "readerId": "0006"
   }
 ]

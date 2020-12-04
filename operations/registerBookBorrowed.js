@@ -37,10 +37,11 @@ function borrowBook(bookId, readerId) {
             // adding reader to the waiting list
             addReaderToWaitingList(booksInFile[bookId].waitingList, readerId);
             fs.writeFile("./books/books.json", JSON.stringify(booksInFile, null, "  "), () => {});
-            console.log('reader ' + readerId + ' was sucessfully added on the waiting list of book ' + bookId);
+            console.log('Reader: ' + readerId + ' was sucessfully added on the waiting list of book: ' + bookId);
 
 
-        } else {
+        } else if(booksInFile[bookId].status === 'Available') {
+
             // change status
             booksInFile[bookId].status = 'IN_TRANSIT'
 
@@ -71,7 +72,7 @@ function borrowBook(bookId, readerId) {
                     // Checking for errors 
                     if (err) throw err;  
                     
-                    console.log('book ' + bookId + ' borrowed sucessfully by reader ' + readerId)
+                    console.log('Book: ' + bookId + ' was borrowed sucessfully by reader: ' + readerId)
                 });
             })
         }

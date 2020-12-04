@@ -11,7 +11,7 @@ module.exports =  returnBookMenu = () => {
     readline.question(
         "Please enter the title of the book to return" + "\n",
         bookToReturn => {
-            console.log(`Choosen book was ${bookToReturn}`);
+            console.log(`Chosen book was ${bookToReturn}`);
 
             // in case there's no result
             if(searchBooksByTitle(bookToReturn).length === 0) {

@@ -5,11 +5,11 @@ const displaybooksByAuthor = require('../books/displayBooksByAuthor.js')
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
-            console.log(`Choosen option was: ${selectedOption}`);
+            console.log(`Chosen option was: ${selectedOption}`);
             displayBooksByTitle()
             break;
         case '2':
-            console.log(`Choosen option was: ${selectedOption}`);
+            console.log(`Chosen option was: ${selectedOption}`);
             displayBooksByAuthor()
             break
         default:

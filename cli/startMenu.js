@@ -61,7 +61,7 @@ module.exports = startMenu = () => {
 
     readline.question(message,
         optionNumber => {
-            console.log(`Choosen option was: ${optionNumber}`);
+            console.log(`Chosen option was: ${optionNumber}`);
             executeNextStep(optionNumber);
         }
     )   

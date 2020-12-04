@@ -10,22 +10,26 @@ const executeNextStep = (bookId) => {
     });
 
     readline.question(
-        "Please enter the name of the reader" + "\n",
+        "Please enter the name of the reader." + "\n",
         readerName => {
-            console.log(`Reader name was ${readerName}`);
+            console.log(`Reader name was: ${readerName}`);
 
             if(searchReadersByName(readerName).length === 0) {
-                console.log('No results.');
                 executeNextStep(bookId);
             }
             else if(searchReadersByName(readerName).length >= 1) {
                 console.log(searchReadersByName(readerName));
                 readline.question(
-                    "Please enter the id of the reader" + "\n",
+                    "Please enter the id of the reader." + "\n",
                     readerId => {
-                        console.log(`Reader Id selected was ${readerId}`);
-                        registerBookBorrowed(bookId, readerId);
-                        readline.close();
+                        if(isNaN(readerId) === false){
+                            console.log(`Reader Id selected was: ${readerId}`);
+                            registerBookBorrowed(bookId, readerId);
+                            readline.close();
+                        } else {
+                            console.log('Please type only numbers for book id.')
+                            borrowBookMenu();
+                        } 
                     })      
             }
         }
@@ -40,22 +44,26 @@ module.exports =  borrowBookMenu = () => {
     });
     
     readline.question(
-        "Please enter the title of the book to borrow" + "\n",
+        "Please enter the title of the book to borrow." + "\n",
         bookToBorrow => {
-            console.log(`Choosen book was ${bookToBorrow}`);
+            console.log(`Chosen book was: ${bookToBorrow}`);
 
             // in case there's no result
             if(searchBooksByTitle(bookToBorrow).length === 0) {
-                console.log('No results.');
+                console.log('No results. Please type again the title or use search to look for books first.');
                 borrowBookMenu();
             }
             else if(searchBooksByTitle(bookToBorrow).length >= 1) {
                 console.log(searchBooksByTitle(bookToBorrow));
                 readline.question(
-                    "Please enter the id of the book" + "\n",
+                    "Please enter the id of the book." + "\n",
                     bookId => {
-                        console.log(`Book Id selected was ${bookId}`);
-                        executeNextStep(bookId);
+                        if(isNaN(bookId) === false){
+                            executeNextStep(bookId);
+                        } else {
+                            console.log('Please type only numbers for bookId.')
+                            borrowBookMenu();
+                        }
                     })      
             }
         }

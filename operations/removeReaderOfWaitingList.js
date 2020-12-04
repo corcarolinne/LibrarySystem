@@ -6,8 +6,9 @@ module.exports = removeReaderOfWaitingList = (queue, readerId) => {
 // adds element at the back of the queue
 function removeFromQueue(queue, readerId) {
 
-	// last position on the queue will be the same as the length of the queue
-	let lastIndex = queue.length;
-	// remove readerId in the last position of the queue
-	queue.splice(queue[lastIndex], 1);
+	for(let i= 0; i < queue.length; i++) {
+		if(queue[i] === readerId) {
+			queue.splice(i, 1);
+		}	
+	}
 }

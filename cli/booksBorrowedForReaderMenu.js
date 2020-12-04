@@ -9,7 +9,7 @@ module.exports = readIdToSearch = () => {
     readline.question(
         "Please type the id of the reader you wanna search for" + "\n",
         idToSearch => {
-            console.log(`Choosen option was ${idToSearch}`);
+            console.log(`Chosen option was ${idToSearch}`);
             // call function to search for reader
             displayBooksBorrowedForReader(idToSearch);
             readline.close();
