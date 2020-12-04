@@ -12,7 +12,7 @@ function searchReaders(readers, input) {
         }
     }
     if (result.length === 0)
-        console.log("Target value not found in array");
+        console.log("No results. Please type name again or search for id.");
 
     return result
 }

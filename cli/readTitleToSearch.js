@@ -10,7 +10,7 @@ module.exports = readTitleToSearch = () => {
     readline.question(
         "Please type the title you wanna search for." + "\n",
         titleToSearch => {
-            console.log(`Choosen title was: ${titleToSearch}`);
+            console.log(`Showing results for title: ${titleToSearch}`);
             // call function to search for book
             displaySearchedBooksByTitle(titleToSearch);
             readline.close();

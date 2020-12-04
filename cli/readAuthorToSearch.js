@@ -10,7 +10,7 @@ module.exports = readAuthorToSearch = () => {
     readline.question(
         "Please type the author you wanna search for." + "\n",
         authorToSearch => {
-            console.log(`Choosen author was: ${authorToSearch}`);
+            console.log(`Showing results for author: ${authorToSearch}`);
             // call function to search for book
             displaySearchedBooksByAuthor(authorToSearch);
             readline.close();

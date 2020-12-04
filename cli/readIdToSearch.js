@@ -6,9 +6,9 @@ module.exports = readNameToSearch = () => {
     });
 
     readline.question(
-        "Please type the id you wanna search for" + "\n",
+        "Please type the id you wanna search for." + "\n",
         idToSearch => {
-            console.log(`Choosen option was ${idToSearch}`);
+            console.log(`Showing results for id: ${idToSearch}`);
             // call function to search for reader
             displaySearchedReadersById(idToSearch);
             readline.close();
