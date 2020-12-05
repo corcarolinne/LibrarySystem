@@ -1,8 +1,12 @@
+// this file contains the workflow  of cli for search readers feature
+
+// imports
 const displaySearchedReadersByName = require('../readers/displaySearchedReadersByName.js');
 const displaySearchedReadersById = require('../readers/displaySearchedReadersById.js');
 const readNameToSearch = require('./readNameToSearch.js');
 const readIdToSearch = require('./readIdToSearch.js')
 
+// funtion that calls functions according to each option chosen by user
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
@@ -16,12 +20,14 @@ const executeNextStep = (selectedOption) => {
             const idToSearch = readIdToSearch();
             break;
         default:
+            // in case user doesn't choose any of the options above
             console.log("Please type '1' or '2' to choose how to search for readers!");
             readerSearchMenu();
             break;
     }
 }
 
+// exports function to ask and read user's input
 module.exports =  readerSearchMenu = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,

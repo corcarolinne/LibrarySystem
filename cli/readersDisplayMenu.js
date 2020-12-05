@@ -1,7 +1,10 @@
+// this file contains the workflow  of cli for display readers list feature
+
+// imports
 const readersByName = require('../readers/displayReadersByName.js');
 const readersById = require('../readers/displayReadersById.js');
 
-
+// funtion that calls functions according to each option chosen by user
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
@@ -11,12 +14,14 @@ const executeNextStep = (selectedOption) => {
             displayReadersById()
             break
         default:
+            // in case user doesn't type any of the options above
             console.log("Please type '1' or '2' to choose how to search for readers!");
             readersDisplayMenu();
             break;
     }
 }
 
+// exports function that asks and reads user input
 module.exports = readersDisplayMenu = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,

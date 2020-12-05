@@ -1,3 +1,6 @@
+// this file contains the first and main menu of and its workflow
+
+// imports
 const bookSearchMenu = require('./bookSearchMenu')
 const readerSearchMenu = require('./readerSearchMenu')
 const bookDisplayMenu = require('./bookDisplayMenu')
@@ -6,6 +9,7 @@ const borrowBookMenu = require('./borrowBookMenu')
 const returnBookMenu = require('./returnBookMenu')
 const booksBorrowedForReaderMenu = require('./booksBorrowedForReaderMenu')
 
+// function to call other functions depending on user's choice
 const executeNextStep = (selectedOption) => {
     switch (selectedOption) {
         case '1':
@@ -34,12 +38,14 @@ const executeNextStep = (selectedOption) => {
             process.exit();
             break
         default:
+            // in case user doesn't type any of the options above
             console.log('Please type a number from 1 to 8 to choose an option!');
             startMenu();
             break;
     }
 }
 
+// main menu
 const message = `
 Select an option from the following menu and press enter:
 1 - Search for a book
@@ -52,6 +58,7 @@ Select an option from the following menu and press enter:
 8 - Exit
 `
 
+// exports function to ask and read user's input
 module.exports = startMenu = () => {
     const readline = require('readline').createInterface({
         input: process.stdin,
