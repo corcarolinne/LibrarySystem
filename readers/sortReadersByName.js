@@ -1,6 +1,10 @@
+// this file contains logic to sort readers by id whenever it's needed for other features
+
+// imports
 const { first_name } = require('process');
 const readers = require('./readers.json');
 
+// exports function to sort alphabeticaly readers by name
 module.exports = sortReadersByName = (readers) => {
     let n = readers.length;
     for (let i = 1; i < n; i++) {
