@@ -7,3 +7,4 @@ Instructions:
 3) To start the program, on terminal, use the command:
     node cli
 
+Link for github repository: https://github.com/corcarolinne/LibrarySystem
